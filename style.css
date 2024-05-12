@@ -72,7 +72,7 @@ input {
   font-size: 1rem;
 }
 
-.profile-section{
+.profile-section {
   height: 30%;
   display: flex;
   justify-content: space-around;
@@ -86,7 +86,7 @@ input {
   align-items: center;
 }
 
-button{
+button {
   width: 7rem;
   height: 3rem;
   border-radius: 2.5rem;
@@ -98,7 +98,6 @@ button{
 
 .main-section {
   width: 100%;
-  height: 80svh;
   background-color: #e2e8f0;
   display: grid;
   grid-template-columns: 70% 30%;
@@ -115,14 +114,16 @@ button{
   display: grid;
   grid-template-columns: repeat(2, 45%);
   gap: 2rem;
-  padding: 1.5rem;
-  height: 87%;
+  padding: 1rem;
+  height: 92.2%;
 }
 
-.card{
+.card {
   background-color: white;
   border-radius: 0.6rem;
-  border-left: 0.6rem solid #F0B429;
+  border-left: 0.6rem solid #f0b429;
+  display: flex;
+  flex-direction: column;
 }
 
 .card p {
@@ -130,14 +131,61 @@ button{
   padding-right: 1rem;
   margin: 0;
   font-size: 14px;
+  flex-grow: 1;
 }
 
-.icons{
-  margin-left: 55%;
-  margin-top: 2rem;
+.icons {
+  align-self: flex-end;
 }
 
-.main-right{
+.main-right {
   display: grid;
-  grid-template-rows: repeat(2, 50%);
+  grid-template-rows: repeat(2/ 40%);
+}
+
+.vertical-card {
+  background-color: white;
+  margin: 1rem;
+  width: 85%;
+  border-radius: 0.6rem;
+  padding: 2rem;
+}
+
+.separator {
+  height: 1px;
+  width: 100%;
+  background-color: #e2e8f0;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.small-profile-picture {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.users {
+  display: grid;
+  grid-template-rows: repeat(4, 5rem);
+}
+
+.user {
+  width: 100%;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.name {
+  font-weight: 700 !important;
+}
+
+.user h4 {
+  margin: 1px;
+  font-weight: 500;
 }
