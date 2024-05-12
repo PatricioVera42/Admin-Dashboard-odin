@@ -49,6 +49,28 @@ body {
   height: 20svh;
 }
 
+.search-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 4rem;
+}
+
+.search-section > * {
+  display: flex;
+  gap: 1.5rem;
+}
+
+input {
+  width: 40vw;
+  height: 4vh;
+  border-radius: 1rem;
+  border: 0;
+  background-color: #e2e8f0;
+}
+
+
+
 .main-content {
   height: 80svh;
   background-color: #e2e8f0;
